@@ -113,9 +113,9 @@ Route::get('editbike/{BikeDetail}',[BikeDetailController::class,'edit']);
 Route::get('deletebike/{bike_details}',[BikeDetailController::class,'destroy']);
 Route::get('updatebike/{bike_details}',[BikeDetailController::class,'update']);
 
-//Route::get('booking/{bike_details}',[BookingController::class, 'booking']);
+//::get('booking/{bike_details}',[BookingController::class, 'booking']);
 
 
-Route::get('booking/{bike_details}',[CheckoutController::class, 'checkout'])->name('checkout');
+Route::get('checkout/{bike_details}',[CheckoutController::class, 'checkout'])->name('checkout');
 Route::post('checkout',[CheckoutController::class, 'afterpayment'])->name('checkout.credit-card');
 

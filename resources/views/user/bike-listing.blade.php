@@ -35,7 +35,7 @@
           <div class=" product-listing-img"><img  src="uploads/{{$data->bikepic}} " class="img-responsive" alt="Image" /> </a> 
           </div>
           <div class="product-listing-content">
-            <h5><a href="  bikedetail/{{$data->id}} ">{{$data->bikename}} </a></h5>
+            <h5><a href="bikedetail/{{$data->id}} ">{{$data->bikename}} </a></h5>
             <p class="list-price">Price Per Day: {{$data->bikeprice}} Php  </p>
             <ul>
             <!-- <li><i class="fa fa-user" aria-hidden="true"></i> {{$data->carseats}} seats</li> -->

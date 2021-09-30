@@ -386,7 +386,7 @@ hr{
                         
                         <div class="panel-body">
                             <div class="form-group">
-                            @foreach($bike_details as $bike)
+                        @foreach($bike_details as $bike)
                                 <div class="col-sm-3 col-xs-3">
                                     <img class="img-responsive" src="../uploads/{{$bike->bikepic}}" />
                                 </div>
@@ -395,7 +395,7 @@ hr{
                                     <div class="col-xs-12"><small>Quantity:<span>1</span></small></div>
                                 </div>
                                 <div class="col-sm-3 col-xs-3 text-right">
-                                    <input class="bikeprice"id="bikeprice" name="bikeprice" type=hidden value="{{$bike->bikeprice}}">
+                                    <input class="bikeprice"id="bikeprice" name="bikeprice"type=hidden value="{{$bike->bikeprice}}">
                                     <h6><span>₱</span>{{$bike->bikeprice}}</h6>
 
                                 </div>

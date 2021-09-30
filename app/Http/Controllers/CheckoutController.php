@@ -5,6 +5,7 @@ use App\Models\BikeDetail;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Stripe;
+use DB;
 class CheckoutController extends Controller
 {
     //
@@ -15,16 +16,14 @@ class CheckoutController extends Controller
     
 
     //UGMA NI NI 
+    $bike_detail = BikeDetail::where('id', $id)->get();
 
-		$amount = 500;
-		$amount *= 100;
-        $amount = (int) $amount;
+      
+	
+        $amount = $bike_detail; //// MAO NI SYA!!
+    
 
-     
-
-        
         $payment_intent = \Stripe\PaymentIntent::create([
-
 			'description' => 'Stripe Test Payment',
 			'amount' => $amount,
 			'currency' => 'PHP',
@@ -36,10 +35,7 @@ class CheckoutController extends Controller
         //FOR BIKES
 		$intent = $payment_intent->client_secret;
       
-        $bike_details = BikeDetail::select('*')
-        ->where('id', '=', $id)
-        ->get();
-    
+       
 
 
 

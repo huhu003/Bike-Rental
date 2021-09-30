@@ -115,7 +115,7 @@
           
 
          
-        <a href="../booking/{{$data->id}} " class="btn">Book Now! <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+        <a href="../checkout/{{$data->id}} " class="btn">Book Now! <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
           
 </i></h5>
           </div>

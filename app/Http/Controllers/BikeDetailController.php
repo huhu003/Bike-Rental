@@ -87,6 +87,8 @@ class BikeDetailController extends Controller
      * @param  \App\Models\BikeDetail  $BikeDetail
      * @return \Illuminate\Http\Response
      */
+
+     //PARA DISPLAY
     public function show($id)
     {
     $BikeDetail = BikeDetail::select('*')
